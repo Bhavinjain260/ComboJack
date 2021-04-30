@@ -832,7 +832,7 @@ void SleepWakeCallBack( void * refCon, io_service_t service, natural_t messageTy
             {
                 if (GETJACKSTATUS() != -1)
                     break;
-                usleep(10000);
+                usleep(250000);
             }
             printf( "Re-init codec...\n" );
             alcInit();
